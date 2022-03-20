@@ -18,7 +18,6 @@ export enum Inputs {
   hdmi2 = 'hdmi2',
   hdmi3 = 'hdmi3',
   hdmi4 = 'hdmi4',
-  browser = 'APP:com.webos.app.browser',
 }
 
 export enum Keys {
