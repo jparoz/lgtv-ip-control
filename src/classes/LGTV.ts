@@ -20,7 +20,7 @@ export class LGTV {
     this.encryption = new LGEncryption(keycode, settings);
   }
 
-  private async sendCommand(command: string) {
+  async sendCommand(command: string) {
     const encryptedData = this.encryption.encrypt(command);
     const encryptedResponse = await this.socket.sendReceive(encryptedData);
     return this.encryption.decrypt(encryptedResponse);
